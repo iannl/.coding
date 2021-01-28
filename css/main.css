@@ -1,0 +1,111 @@
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background: #555;
+    color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#header ::selection {
+    background: none; /* WebKit/Blink Browsers */
+}
+#header ::-moz-selection {
+    background: none; /* Gecko Browsers */
+}
+
+#header:active {
+    overflow: scroll;
+}
+#header > a {
+    font-size: xx-large;
+    color: yellow;
+    text-decoration: none;
+    border: groove;
+    background-color: black;
+}
+
+#header > a:active {
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: grey;
+}
+
+#header > a:hover {
+    font-size: xx-large;
+    color: rgb(255, 208, 0);
+    text-decoration: underline;
+}
+
+a {
+    margin: 3px;
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: xx-large;
+    color: rgb(255, 208, 0);
+    text-decoration: underline;
+}
+
+.image{
+    box-shadow: 5px 10px 8px #888888;
+    width: 8%;
+    transform: skewY(10deg);
+    background-color: black;
+    cursor: zoom-in;
+    position: inherit;
+    margin-left: 72%;
+}
+
+.imagecontainer{
+    position: fixed;
+}
+
+.image:active{
+    box-shadow: 5px 10px 8px #888888;
+    width: 25%;
+    transform: skewY(0deg);
+    background-color: black;
+    float: right;
+}
+
+input[type=text]#search {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]#search:focus {
+    box-shadow: 5px 10px 8px #888888;
+    width: 100%;
+  }
+
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
