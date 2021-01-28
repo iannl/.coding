@@ -1,5 +1,5 @@
 # coding
-## A website for my learn to code tips and tools
+## A website for learning code tips and tools
 ### –Home–
 #### The home page shows you a list of HTML tags, JS operators, and CSS properties.
 The home page is a reference to make it easyier to program webpages!
